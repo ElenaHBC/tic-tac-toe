@@ -7,3 +7,6 @@ pc_move = player_move +/- 1
 pc_move = user_move +/- 1 - won't work, since user_move is a local variable defined only inside the function
 # NameError: name 'user_move' is not defined
 
+function inside a function/ player_move as an argument in pc_move?
+def pc_move(board, player_move):
+

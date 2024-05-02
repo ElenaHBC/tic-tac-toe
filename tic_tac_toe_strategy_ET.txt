@@ -9,4 +9,4 @@ pc_move = user_move +/- 1 - won't work, since user_move is a local variable defi
 
 function inside a function/ player_move as an argument in pc_move?
 def pc_move(board, player_move):
-
+# pc_move() missing 1 required positional argument: 'player_move'

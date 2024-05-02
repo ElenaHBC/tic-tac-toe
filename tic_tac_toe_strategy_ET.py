@@ -26,11 +26,11 @@ def player_move(board):
     else:
       print("Please enter a number between 1 and 20.")
 
-def pc_move(board):
-    while True:
-        pc_mark_move = randrange(20)
-        if board[pc_mark_move] == "-":
-            return move(board, "o", pc_mark_move)
+def pc_move(board, player_move):
+  while True:
+    pc_mark_move = player_move + 1    
+    if board[pc_mark_move] == "-":
+      return move(board, "o", pc_mark_move)
 
 def tictactoe_1D():
   board = ("--------------------")

@@ -2,17 +2,17 @@ from random import randrange
 board = ("--------------------")
 
 def evaluate(board):
-    if "xxx" in board:
-        return "x"
-    elif "ooo" in board:
-        return "o"
-    elif "-" not in board:
-        return "Draw"
-    else:
-        return None
+  if "xxx" in board:
+    return "x"
+  elif "ooo" in board:
+    return "o"
+  elif "-" not in board:
+    return "Draw"
+  else:
+    return None
 
 def move(board, mark, position):
-    return board[:position] + mark + board[position + 1:]
+  return board[:position] + mark + board[position + 1:]
 
 def player_move(board):
   while True:
@@ -27,10 +27,10 @@ def player_move(board):
       print("Please enter a number between 1 and 20.")
 
 def pc_move(board):
-    while True:
-        pc_mark_move = randrange(20)
-        if board[pc_mark_move] == "-":
-            return move(board, "o", pc_mark_move)
+  while True:
+    pc_mark_move = randrange(20)
+    if board[pc_mark_move] == "-":
+      return move(board, "o", pc_mark_move)
 
 def tictactoe_1D():
   board = ("--------------------")

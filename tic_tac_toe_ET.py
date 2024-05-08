@@ -18,7 +18,7 @@ def player_move(board):
   while True:
     user_input = int(input("Which position between 1 and 20 do you want to play?: "))
     if 0 < user_input <= 20:
-      user_move = int(user_input) - 1
+      user_move = user_input - 1
       if board[user_move] == "-":
         return move(board, "x", user_move)
       else:

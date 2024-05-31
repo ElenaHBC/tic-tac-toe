@@ -17,12 +17,15 @@ def move(board, mark, position):
 def player_move(board):
   while True:
     user_input = int(input("Which position between 1 and 20 do you want to play?: "))
-    if 0 < user_input <= 20:
-      user_move = user_input - 1
-      if board[user_move] == "-":
-        return move(board, "x", user_move)
+    try:
+      if 0 < user_input <= 20:
+        user_move = user_input - 1
+        if board[user_move] == "-":
+          return move(board, "x", user_move)
       else:
         print("Please choose an empty position on the board.")
+    except ValueError:
+      print("This is not a number! Please enter a number!")
     else:
       print("Please enter a number between 1 and 20.")
 
@@ -60,4 +63,3 @@ def tictactoe_1D():
       player = "o"
     else: player = "x"
 
-tictactoe_1D()

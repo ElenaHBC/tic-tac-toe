@@ -16,3 +16,10 @@ def test_move():
     move2 = move(board2, 'o', 19)
     assert move1 == "-------------------o"
 
+"""
+a) python module is an organized block/box of code, while packages contain several modules with sub-modules
+b) side effects of modules are undesirable effects when calling/importing the module, for example if the module contains print statements
+c) exceptions
+d) create, throw and catch exceptions
+e) examples of benefits of testing
+"""

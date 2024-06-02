@@ -19,7 +19,8 @@ def test_move():
 """
 a) python module is an organized block/box of code, while packages contain several modules with sub-modules
 b) side effects of modules are undesirable effects when calling/importing the module, for example if the module contains print statements
-c) exceptions
-d) create, throw and catch exceptions
+c) exceptions are error messages that have a specific information for the art of error; there are several hierarchial built-in exceptions;
+What to do if third-party code that we use throws exceptions? - I guess we either correct the code or catch the exceptions with except?
+d) create, throw and catch exceptions: raise (creates and throws), try, except (catches and handles an error), else, finally (mostly for clean-ups)?
 e) examples of benefits of testing
 """

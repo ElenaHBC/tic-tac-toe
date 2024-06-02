@@ -14,7 +14,7 @@ def test_move():
     assert move1 == "-x------------------"
     board2 = "--------------------"
     move2 = move(board2, 'o', 19)
-    assert move1 == "-------------------o"
+    assert move2 == "-------------------o"
 
 """
 a) python module is an organized block/box of code, while packages contain several modules with sub-modules

@@ -22,5 +22,6 @@ b) side effects of modules are undesirable effects when calling/importing the mo
 c) exceptions are error messages that have a specific information for the art of error; there are several hierarchial built-in exceptions;
 What to do if third-party code that we use throws exceptions? - I guess we either correct the code or catch the exceptions with except?
 d) create, throw and catch exceptions: raise (creates and throws), try, except (catches and handles an error), else, finally (mostly for clean-ups)?
-e) examples of benefits of testing
+e) examples of benefits of testing - I guess checking if the code works properly can be done faster and more efficiently;
+also you can "prove' to others that the code works as expected
 """

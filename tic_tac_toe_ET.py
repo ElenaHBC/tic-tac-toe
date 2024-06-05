@@ -22,8 +22,8 @@ def player_move(board):
         user_move = user_input - 1
         if board[user_move] == "-":
           return move(board, "x", user_move)
-      else:
-        print("Please choose an empty position on the board.")
+        else:
+          print("Please choose an empty position on the board.")
     except ValueError:
       print("This is not a number! Please enter a number!")
     else:
